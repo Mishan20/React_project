@@ -81,6 +81,8 @@ export default function Home() {
           alt="profile image" 
           layout="fill"
           objectFit="cover" />
+
+          
         </div>
         </section>
       
