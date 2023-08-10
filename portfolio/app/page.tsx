@@ -1,6 +1,13 @@
 //import Image from 'next/image'
 import Head from "next/head"
+import Image from "next/image";
+
+//image
+import profileImage from "../public/p2.png";
+
+//icons
 import {BsFillMoonStarsFill} from "react-icons/bs";
+import {AiOutlineGithub, AiFillLinkedin, AiOutlineTwitter, AiFillFacebook } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -19,7 +26,7 @@ export default function Home() {
         <section>
           {/* nav */}
           <nav className="py-10 flex justify-between">
-            <h1 className=" text-sm">Developed by IShan Senanayaka</h1>
+            <h1 className=" text-sm">Developed by Ishan Senanayaka</h1>
             <ul className=" flex items-center">
               {/* icon */}
               <li>
@@ -34,6 +41,47 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+        {/* hero */}
+        <div className=" text-center p-10">
+          <h1 className=" text-5xl font-bold text-yellow-400">Ishan Senanayaka</h1>
+          <h3 className=" text-2xl py-4">Mobile Apps and Website Developer</h3>
+          <p className=" text-sm py-4 text-gray-400">
+          Welcome to my digital realm! I am a passionate mobile app and website developer, 
+          dedicated to transforming creative visions into interactive realities. 
+          With a knack for innovation and a keen eye for detail, I specialize in crafting seamless
+          user experiences that captivate and engage. Whether it's building intuitive mobile apps or 
+          designing dynamic websites, I thrive on bringing ideas to life in the digital landscape. 
+          Join me on a journey where imagination meets technology, and let's turn your digital dreams 
+          into stunning, functional masterpieces.
+          </p>
+        </div>
+        {/* socials */}
+        <div className=" text-5xl flex justify-center gap-16 text-gray-600">
+          <a href="https://github.com/Mishan20 ">
+            <AiOutlineGithub />
+          </a>
+
+          <a href="https://www.linkedin.com/in/ishan-senanayaka-936b44267/ ">
+            <AiFillLinkedin />
+          </a>
+
+          <a href="https://twitter.com/Senanayaka38949 ">
+          <AiOutlineTwitter />
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=100070423373473 ">
+          <AiFillFacebook />  
+          </a>
+
+        </div>
+        {/* profile */}
+        <div className="m-auto relative bg-gradient-to-b from-yellow-200 w-80 h-80 p-5 mt-20 rounded-full">
+          <Image src={profileImage} 
+          alt="profile image" 
+          layout="fill"
+          objectFit="cover" />
+        </div>
         </section>
       
       </main>
