@@ -4,6 +4,10 @@ import Image from "next/image";
 
 //image
 import profileImage from "../public/p2.png";
+import graphicDesign from "../public/design.png";
+import code from "../public/code.png";
+
+
 
 //icons
 import {BsFillMoonStarsFill} from "react-icons/bs";
@@ -84,6 +88,65 @@ export default function Home() {
 
           
         </div>
+        </section>
+        {/* services */}
+        <section>
+          <div>
+            <h2 className=" text-5xl py-10 font-bold opacity-60">Services I Offer</h2>
+            <p className=" text-sm py-2 text-gray-400 leading-6">
+          Welcome to my digital realm! I am a passionate mobile app and website developer, 
+          dedicated to transforming creative visions into interactive realities. 
+          With a knack for innovation and a keen eye for detail, I specialize in crafting seamless
+          user experiences that captivate and engage. Whether it's building intuitive mobile apps or 
+          designing dynamic websites, I thrive on bringing ideas to life in the digital landscape. 
+          Join me on a journey where imagination meets technology, and let's turn your digital dreams 
+          into stunning, functional masterpieces.
+          </p>
+          </div>
+          {/* services cards */}
+          <div>
+            {/* card */}
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image src={graphicDesign} 
+              alt="design image" width={100} height={100} className=" inline" />
+
+              <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+              <p className=" text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Modi sint impedit iusto minus quia, eveniet fugit repellat distinctio 
+                dolores mollitia, eligendi eaque ipsa aliquid ipsum nulla, quod iure maiores 
+                odio!
+              </p>
+            </div>
+
+            {/* card */}
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image src={code} 
+              alt="design image" width={100} height={100} className=" inline" />
+
+              <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+              <p className=" text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Modi sint impedit iusto minus quia, eveniet fugit repellat distinctio 
+                dolores mollitia, eligendi eaque ipsa aliquid ipsum nulla, quod iure maiores 
+                odio!
+              </p>
+            </div>
+
+            {/* card */}
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image src={graphicDesign} 
+              alt="design image" width={100} height={100} className=" inline" />
+
+              <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+              <p className=" text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Modi sint impedit iusto minus quia, eveniet fugit repellat distinctio 
+                dolores mollitia, eligendi eaque ipsa aliquid ipsum nulla, quod iure maiores 
+                odio!
+              </p>
+            </div>
+          </div>
         </section>
       
       </main>
