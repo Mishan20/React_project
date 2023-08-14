@@ -6,7 +6,9 @@ import Image from "next/image";
 import profileImage from "../public/p2.png";
 import graphicDesign from "../public/design.png";
 import code from "../public/code.png";
-
+import image1 from "../public/web1.png";
+import image2 from "../public/web2.png";
+import image3 from "../public/web3.png";
 
 
 //icons
@@ -148,6 +150,90 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* my work */}
+        <section>
+          <div>
+            <h2 className=" text-5xl py-10 font-bold opacity-60">Portfolio</h2>
+            <p className=" text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Modi sint impedit iusto minus quia, eveniet fugit repellat distinctio 
+                dolores mollitia, eligendi eaque ipsa aliquid ipsum nulla, quod iure maiores 
+                odio!
+            </p>
+          </div>
+          {/* images */}
+          <div className=" flex flex-col gap-10 p-10">
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+
+            <Image 
+            src={image1} 
+            alt="image 1" 
+            layout=" responsive"
+            className="rounded-lg object-cover"/>
+          </div>
+        </section>
+
+        {/* footer */}
+        <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+           <div>
+            <h3 className=" text-base mb-2"> Contact me for more details</h3>
+            <p className=" opacity-40">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi sint impedit iusto minus quia, eveniet fugit repellat distinctio 
+              dolores mollitia, eligendi eaque ipsa aliquid ipsum nulla, quod iure maiores 
+              odio!
+            </p>
+           </div>
+           <div>
+              <div className=" text-5xl flex justify-center gap-16 text-gray-600">
+                <a href="https://github.com/Mishan20 ">
+                <AiOutlineGithub />
+                </a>
+
+                 <a href="https://www.linkedin.com/in/ishan-senanayaka-936b44267/ ">
+                <AiFillLinkedin />
+                </a>
+
+                <a href="https://twitter.com/Senanayaka38949 ">
+                <AiOutlineTwitter />
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100070423373473 ">
+                <AiFillFacebook />  
+                </a>
+
+              </div>
+           </div>
+        </footer>
       
       </main>
     </div>
